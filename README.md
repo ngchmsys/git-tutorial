@@ -50,26 +50,25 @@ git add .
 git commit -m "コミットコメント"
 ```
 
-**ローカルリポジトリを初期化する**
-
-```sh
-git init
-```
-
 **ブランチを削除する**
 
 ```sh
+git branch -d ブランチ名
 ```
 
 **コミットを取り消す**
 
 ```sh
+git reset --hard ハッシュ値
 ```
 
-**コンフィグを確認する（正規表現）**
+
+# 初期設定
+
+**ローカルリポジトリを初期化する**
 
 ```sh
-git config --get-regexp ^user
+git init
 ```
 
 **コンフィグを設定する**
@@ -85,3 +84,20 @@ git config --global user.name "username"
 git config --global user.email "username@example.com"
 ```
 
+**コンフィグを確認する(リスト表示：-l)**
+
+```sh
+git config --list
+```
+
+**コンフィグを確認する（正規表現）**
+
+```sh
+git config --get-regexp ^user
+```
+
+**コンフィグを消去する**
+
+```sh
+git config --global --unset user.name
+```
