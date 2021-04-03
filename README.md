@@ -96,7 +96,7 @@ git config --list
 git config --get-regexp ^user
 ```
 
-**コンフィグを消去する**
+**コンフィグを消去**
 
 ```sh
 git config --global --unset user.name
